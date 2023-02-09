@@ -26,7 +26,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6">
         {/* right */}
         <div className="w-12">
-          <img src="../assets/logo.svg" alt="logo img" className="w-full" />
+          <h1>David</h1>
         </div>
 
         {/* desktop nav */}
