@@ -1,117 +1,71 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Landing = ({ setSelectedPage }) => {
-  const isAboveSmallScreens = useMediaQuery("(min-width: 1060px)");
-
+const Landing = () => {
   return (
-    <section
-      id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10 "
-    >
-      {/* image section */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
-        {isAboveSmallScreens ? (
-          <div
-            className="relative ml-20 before:absolute  before:-top-20 before:-left-20
-                         before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full
-                         before:border-2 before:border-coral before:z-[-1]"
-          >
-            <img
-              alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-200 z-10 w-full
-                              max-w-[200px] md:max-w-[400px]"
-              src="assets/hero_1.jpg"
-            />
-          </div>
-        ) : (
-          <div>
-            <img
-              alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-200 z-10 w-full
-                 max-w-[200px] md:max-w-[400px]"
-              src="assets/hero_1.jpg"
-            />
-          </div>
-        )}
-      </div>
-
+    <section id="home" className="max-w-[1560px] mx-auto w-[90%]">
       {/* main section */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="flex flex-col items-center md:flex-row-reverse md:justify-end gap-0 pt-24 ">
         {/* Headings */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            David{""}
-            <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20
-                                 before:absolute before:-left-[25px]
-                                before:-top-[70px] before:z-[-1]"
-            >
-              Ochuma
-            </span>
-          </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I'm a mern stack developer. open to work full time and part time on
-            available projects
-          </p>
-        </motion.div>
-        {/* call to action */}
-        <motion.div
-          className="flex mt-5 justify-center md:justify-start"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
-          <AnchorLink
-            className="bg-gradient-rainblue text-gray_bg rounded-sm py-3 px-7 font-semibold
-                        hover:bg-blue-900 hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+        <div className="md:-ml-10 z-20">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
           >
-            Contact Me
-          </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
-          >
-            <div
-              className="bg-black_bg hover:text-red-500 transition duration-500 w-full h-full flex items-center
-                             justify-center font-playfair px-2"
-            >
-              Let's Talk
+            <div className="md:ml-[-20px] lg:ml-[-25px]">
+              <p className="text-5xl font-playfair z-10  font-semibold md:text-[54px] lg:text-[68px]">
+                FRONT END
+              </p>
+              <p className="xs:relative z-20 text-3xl md:text-[36px] lg:text-[46px]  tracking-[11.5px] md:tracking-[12.5px] lg:tracking-[16.5px] my-3">
+                DEVELOPER
+              </p>
+              <p className="xs:relative z-20 text-2xl  md:text-[30px] lg:text-[35px] tracking-wide my-3 text-[#6a6a6a] ">
+                BUILDING YOUR IDEAS
+              </p>
             </div>
-          </AnchorLink>
-        </motion.div>
-        <motion.div
-          className="flex mt-5 justify-center md:justify-start"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
-          <SocialMediaIcons />
-        </motion.div>
+          </motion.div>
+        </div>
+        <div>
+          <div className="flex gap-0 md:gap-5 lg:gap-9">
+            <div className="grid gap-7 md:gap-20 lg:gap-40">
+              <motion.div
+                className=""
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: -50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+              >
+                <SocialMediaIcons />
+              </motion.div>
+              <div className="number">
+                <p className="font-bold text-[40px] md:text-[60px] lg:text-[80px] border-b-2 border-white">
+                  01
+                </p>
+              </div>
+            </div>
+            {/* image section */}
+            <div>
+              <div className="ellipse">
+                <img
+                  alt="profile"
+                  className="hover:filter hover:saturate-200 transition duration-200
+                 h-full w-full"
+                  src="assets/hero.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
