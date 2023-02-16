@@ -21,9 +21,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
   return (
-    <section className="max-w-[1560px]">
-      <div className="z-40 w-full fixed top-0 ">
-        <div className="flex items-center justify-between h-[70px]  mx-auto w-[90%]">
+    <section className=" z-40 fixed top-0 w-full right-auto left-auto">
+      <div className="w-[90%] mx-auto max-w-[1560px]">
+        <div className="flex items-center justify-between h-[70px] w-full">
           {/* right */}
           <div className="w-12">
             <h1>David</h1>
@@ -33,22 +33,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           {isAboveSmallScreens ? (
             <div className="flex justify-between gap-16 font-body text-sm font-semibold">
               <Link
-                page="Home"
+                page="About"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Skills"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Projects"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Testimonials"
+                page="Portfolio"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
@@ -78,27 +68,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               {/*Menu Items*/}
               <div className="flex flex-col gap-10 ml-[33%] text-2xl">
                 <Link
-                  page="home"
+                  page="About"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />
                 <Link
-                  page="skills"
+                  page="Portfolio"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />
                 <Link
-                  page="projects"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link
-                  page="testimonials"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link
-                  page="contact"
+                  page="Contact"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />

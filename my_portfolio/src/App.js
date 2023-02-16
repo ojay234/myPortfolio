@@ -1,12 +1,12 @@
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
-import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import "./app.css";
+import About from "./scenes/About";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -29,7 +29,7 @@ function App() {
       />
       <div className="sections">
         <Landing />
-        <MySkills />
+        <About />
         <Testimonials />
         <Contact />
       </div>
