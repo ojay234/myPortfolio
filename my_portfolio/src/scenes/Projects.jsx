@@ -27,7 +27,7 @@ const Projects = () => {
             <p className="mt-7">{text}</p>
           </div>
           <img
-            src={`../assets/${projectTitle}.jpg`}
+            src={`../assets/${projectTitle}`}
             alt={projectTitle}
             className="w-full h-full md:h-120%  object-cover rounded-lg"
           />
@@ -81,7 +81,7 @@ const Projects = () => {
           {/* Row 1*/}
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 1"
+              title="Project 1.jpg"
               link="https://d-stage.vercel.app"
               name="D-stage"
               text="An NFT exchange market place"
@@ -89,17 +89,35 @@ const Projects = () => {
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 2"
+              title="Project 2.jpg"
               link={"https://eshop-fe74d.web.app/"}
               name="Eshop"
-              text="Ecommerce Organic shop"
+              text="E-commerce Organic shop"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
-            <Project title="Project 3" />
+            <Project
+              title="Project 4.jpg"
+              link={"https://jade-marketing.vercel.app/"}
+              name="Jaydemarketing"
+              text="A digital marketing and software development agency website"
+            />
           </div>
           <div className="md:w-[30%] w-[90%]">
-            <Project title="Project 1" />
+            <Project
+              title="Project 5.jpg"
+              link={"https://github.com/ojay234/blog"}
+              name="Life & Light"
+              text="Node js Blog api"
+            />
+          </div>
+          <div className="md:w-[30%] w-[90%]">
+            <Project
+              title="Project 3.jpg"
+              link={"https://ojaystore.netlify.app/"}
+              name="Ojay Store"
+              text="A static page of an e-commerce store"
+            />
           </div>
         </motion.div>
         <div className="relative w-fit">
