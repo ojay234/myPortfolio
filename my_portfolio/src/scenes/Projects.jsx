@@ -37,7 +37,7 @@ const Projects = () => {
   };
   return (
     <section
-      id="projects"
+      id="portfolio"
       className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] h-fit md:relative pb-16 md:pb-0"
     >
       {/* Headings */}
@@ -109,6 +109,16 @@ const Projects = () => {
               link={"https://github.com/ojay234/blog"}
               name="Life & Light"
               text="Node js Blog api"
+            />
+          </div>
+          <div className="md:w-[30%] w-[90%]">
+            <Project
+              title="Project 6.jpg"
+              link={
+                "https://github.com/ojay234/weather-app/tree/main/web-server"
+              }
+              name="Weather api"
+              text="A weather api built with node js"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
