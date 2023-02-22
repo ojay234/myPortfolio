@@ -30,7 +30,7 @@ function App() {
       <div className="sections">
         <Landing />
         <About />
-        <Testimonials />
+        <Projects />
         <Contact />
       </div>
     </div>

@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
-    <section id="home" className="max-w-[1560px] mx-auto w-[90%] md:h-[100vh]">
+    <section
+      id="home"
+      className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] h-fit"
+    >
       {/* main section */}
       <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-end gap-0 pt-24 ">
         {/* Headings */}
@@ -61,7 +64,7 @@ const Landing = () => {
         </div>
       </div>
       <div className="relative w-fit">
-        <p className="absolute bottom-[-40px] font-bold text-[40px] md:text-[60px] lg:text-[80px] border-b-2 border-white">
+        <p className="absolute  lg:bottom-[-50px]  bottom-[-40px] md:bottom-[-80px] font-bold text-[40px] md:text-[60px] lg:text-[80px] border-b-4 border-white">
           01
         </p>
       </div>

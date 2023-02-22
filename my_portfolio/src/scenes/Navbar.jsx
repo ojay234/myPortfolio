@@ -21,12 +21,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
   return (
-    <section className=" z-40 fixed top-0 w-full right-auto left-auto">
+    <section className=" z-40 fixed top-0 w-full right-auto left-auto bg-black_bg">
       <div className="w-[90%] mx-auto max-w-[1560px]">
         <div className="flex items-center justify-between h-[70px] w-full">
           {/* right */}
-          <div className="w-12">
-            <h1>David</h1>
+          <div className="w-12 font-body text-md font-semibold">
+            <h1>DaveTech</h1>
           </div>
 
           {/* desktop nav */}

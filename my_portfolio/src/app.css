@@ -1,18 +1,20 @@
-.sections {
-  position: relative;
-  height: calc(100vh-70px);
-  scroll-behavior: smooth;
-}
+@media screen and (min-width: 768px) {
+  .sections {
+    position: relative;
+    height: calc(100vh-70px);
+    scroll-behavior: smooth;
+  }
 
-::-webkit-scrollbar {
-  display: none;
-}
-.sections {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .sections {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
-.sections > * {
-  height: calc(100vh-70px);
-  scroll-snap-align: start;
+  .sections > * {
+    height: calc(100vh-70px);
+    scroll-snap-align: start;
+  }
 }
