@@ -8,7 +8,7 @@ const SocialMediaIcons = () => {
     <div className="grid gap-5">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="/"
+        href="https://facebook.com/david_ochuma"
         target="_blank"
         rel="noreferrer"
       >
@@ -16,7 +16,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="/"
+        href="https://twitter.com/david__ochuma"
         target="_blank"
         rel="noreferrer"
       >
@@ -24,7 +24,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="/"
+        href="https://github.com/ojay234"
         target="_blank"
         rel="noreferrer"
       >
@@ -32,7 +32,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="/"
+        href="https://www.linkedin.com/in/david-ochuma-a9269a185/"
         target="_blank"
         rel="noreferrer"
       >

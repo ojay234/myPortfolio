@@ -9,7 +9,7 @@ const About = () => {
       className="pt-10 pb-24 max-w-[1560px] mx-auto w-[90%] md:h-[100vh] md:min-h-[100vh]"
     >
       {/* Header and image section */}
-      <div className="flex flex-col md:flex-row md:justify-between gap-4 mt-10">
+      <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-4 mt-10">
         <motion.div
           className="md:w-[45%] flex flex-col lg:gap-6 md:gap-2 gap-3"
           initial="hidden"
