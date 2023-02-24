@@ -20,7 +20,7 @@ const About = ({ selectedPage, setSelectedPage }) => {
   return (
     <section
       id="about"
-      className="md:pt-10 pb-24 max-w-[1560px] mx-auto w-[90%] min-h-[100vh] h-fit"
+      className="md:pt-10 pb-24 max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] min-h-[90vh] h-fit"
     >
       {/* Header and image section */}
       <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-4 mt-10">

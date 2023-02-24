@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <section
       id="portfolio"
-      className="max-w-[1560px] mx-auto w-[90%] min-h-[100vh] h-fit md:relative pb-16 md:pb-0"
+      className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] min-h-[90vh] h-fit md:relative pb-16 md:pb-0"
     >
       {/* Headings */}
       {/*
