@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] h-fit md:pt-32 pb-24 md:pb-0"
+      className="max-w-[1560px] mx-auto w-[90%] min-h-[100vh] h-fit md:pt-32 pb-24 md:pb-0"
     >
       {/* Headings */}
 

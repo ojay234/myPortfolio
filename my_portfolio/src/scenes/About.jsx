@@ -1,12 +1,26 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const About = () => {
+const About = ({ selectedPage, setSelectedPage }) => {
+  const Link = ({ page, selectedPage, setSelectedPage }) => {
+    const lowerCasePage = page.toLowerCase();
+    return (
+      <AnchorLink
+        className={`${selectedPage === lowerCasePage ? "text-gray_bg" : ""}
+        hover:text-gray_bg transition duration-500`}
+        href={`#${lowerCasePage}`}
+        onClick={() => setSelectedPage(lowerCasePage)}
+      >
+        {page}
+      </AnchorLink>
+    );
+  };
   const isAbovedMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
     <section
       id="about"
-      className="pt-10 pb-24 max-w-[1560px] mx-auto w-[90%] md:h-[100vh] md:min-h-[100vh]"
+      className="md:pt-10 pb-24 max-w-[1560px] mx-auto w-[90%] min-h-[100vh] h-fit"
     >
       {/* Header and image section */}
       <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-4 mt-10">
@@ -44,7 +58,13 @@ const About = () => {
           </p>
           <div className="flex gap-5 items-center text-[14px] md:text-[14px] lg:text-[16px]">
             <button className="w-[35%] h-[50px] p-2  bg-green hover:bg-transparent border-2 border-green transition-all duration-500">
-              <a href="/">Contact Me</a>
+              <Link
+                page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              >
+                Contact Me
+              </Link>
             </button>
             <button className="w-[35%] h-[50px] p-2 bg-transparent border-2 border-gray_bg hover:bg-gray_bg transition-all duration-500">
               <a href="assets/resume.pdf" download>

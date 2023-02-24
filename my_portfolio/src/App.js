@@ -29,7 +29,7 @@ function App() {
       />
       <div className="sections">
         <Landing />
-        <About />
+        <About selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         <Projects />
         <Contact />
       </div>

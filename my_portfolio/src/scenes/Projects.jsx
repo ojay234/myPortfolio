@@ -8,10 +8,7 @@ const Projects = () => {
     },
   };
 
-  const projectVariant = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 },
-  };
+  const projectVariant = {};
 
   const Project = ({ title, link, name, text }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-70 transition duration-500 
@@ -20,7 +17,14 @@ const Projects = () => {
     const projectTitle = title.split(" ").join("_").toLowerCase();
 
     return (
-      <motion.div variants={projectVariant} className="relative  rounded-lg">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="relative  rounded-lg"
+      >
         <a href={link}>
           <div className={overlayStyles}>
             <p className="text-2xl font-playfair">{name}</p>
@@ -38,7 +42,7 @@ const Projects = () => {
   return (
     <section
       id="portfolio"
-      className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] h-fit md:relative pb-16 md:pb-0"
+      className="max-w-[1560px] mx-auto w-[90%] min-h-[100vh] h-fit md:relative pb-16 md:pb-0"
     >
       {/* Headings */}
       {/*
@@ -75,7 +79,7 @@ const Projects = () => {
           className="flex justify-between gap-5 flex-col md:flex-row flex-wrap mx-auto"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0 }}
           variants={container}
         >
           {/* Row 1*/}
