@@ -93,26 +93,26 @@ const Projects = () => {
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 2.jpg"
-              link={"https://eshop-fe74d.web.app/"}
-              name="Eshop"
-              text="E-commerce Organic shop"
+              title="Project 2.png"
+              link={"https://meavitae-webapp.vercel.app/"}
+              name="meavitae"
+              text="meavitae web app"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 4.jpg"
-              link={"https://jade-marketing.vercel.app/"}
-              name="Jaydemarketing"
-              text="A digital marketing and software development agency website"
+              title="Project 3.png"
+              link={"https://www.fleekspace.com/"}
+              name="fleekspace"
+              text="Book spaces online"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
               title="Project 5.jpg"
-              link={"https://github.com/ojay234/blog"}
-              name="Life & Light"
-              text="Node js Blog api"
+              link={"https://eshop-fe74d.web.app/"}
+              name="Eshop"
+              text="E-commerce Organic shop"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
@@ -121,16 +121,16 @@ const Projects = () => {
               link={
                 "https://github.com/ojay234/weather-app/tree/main/web-server"
               }
-              name="Weather api"
-              text="A weather api built with node js"
+              name="sneakers store"
+              text="frontend mentor sneaker store"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 3.jpg"
-              link={"https://ojaystore.netlify.app/"}
-              name="Ojay Store"
-              text="A static page of an e-commerce store"
+              title="Project 4.jpg"
+              link={"https://jade-marketing.vercel.app/"}
+              name="Jaydemarketing"
+              text="A digital marketing and software development agency website"
             />
           </div>
         </motion.div>

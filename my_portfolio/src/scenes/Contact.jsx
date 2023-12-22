@@ -7,8 +7,8 @@ import { GoLocation } from "react-icons/go";
 const Contact = () => {
   const {
     register,
-    trigger,
     formState: { errors },
+    trigger,
   } = useForm();
 
   const onSubmit = async (e) => {
@@ -17,14 +17,13 @@ const Contact = () => {
       e.preventDefault();
     }
   };
+
   return (
     <section
       id="contact"
       className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] min-h-[90vh] h-fit md:pt-32 pb-24 md:pb-0"
     >
-      {/* Headings */}
-
-      {/* form & image */}
+      {/* Form & Contact Information */}
       <div className="md:flex md:justify-between gap-16 mt-5 md:w-[80%] mx-auto w-full">
         <motion.div
           className="basis-1/2"
@@ -69,7 +68,7 @@ const Contact = () => {
           }}
         >
           <form
-            target=" _blank"
+            target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/61531fe7fa661cbba93a698f03fc5c8d"
             method="POST"
@@ -79,15 +78,15 @@ const Contact = () => {
               type="text"
               placeholder="NAME"
               {...register("name", {
-                required: true,
-                maxLength: 100,
+                required: "This field is required.",
+                maxLength: {
+                  value: 100,
+                  message: "Max length is 100 characters.",
+                },
               })}
             />
             {errors.name && (
-              <p className="text-red-500 mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 100 char."}
-              </p>
+              <p className="text-red-500 mt-1">{errors.name.message}</p>
             )}
 
             <input
@@ -95,38 +94,37 @@ const Contact = () => {
               type="text"
               placeholder="EMAIL"
               {...register("email", {
-                required: true,
-                pattern: /^[A-Z0-9.%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                required: "This field is required.",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "Invalid email address.",
+                },
               })}
             />
             {errors.email && (
-              <p className="text-red-500 mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "pattern" && "Invalid email address."}
-              </p>
+              <p className="text-red-500 mt-1">{errors.email.message}</p>
             )}
 
             <textarea
               className="w-full bg-transparent border-2 border-gray_bg rounded-md font-semibold placeholder:opaque-black p-3 mt-5"
-              type="text"
               placeholder="MESSAGE"
               rows="4"
               cols="50"
               {...register("message", {
-                required: true,
-                maxLength: 2000,
+                required: "This field is required.",
+                maxLength: {
+                  value: 200,
+                  message: "Max length is 200 characters.",
+                },
               })}
             />
             {errors.message && (
-              <p className="text-red-500 mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 200 char."}
-              </p>
+              <p className="text-red-500 mt-1">{errors.message.message}</p>
             )}
+
             <button
               type="submit"
-              className="p-5 bg-transparent border-2 border-green hover:bg-green rounded-sm font-semibold text-white mt-5 
-                            transition duration-500"
+              className="p-5 bg-transparent border-2 border-green hover:bg-green rounded-sm font-semibold text-white mt-5 transition duration-500"
             >
               SEND ME A MESSAGE
             </button>
@@ -134,7 +132,7 @@ const Contact = () => {
         </motion.div>
       </div>
       <div className="relative w-fit">
-        <p className="absolute left-0 lg:bottom-[-110px]  bottom-[-70px]   md:bottom-[-110px]  font-bold text-[40px] md:text-[60px] lg:text-[80px] border-b-4 border-white">
+        <p className="absolute left-0 lg:bottom-[-110px] bottom-[-70px] md:bottom-[-110px] font-bold text-[40px] md:text-[60px] lg:text-[80px] border-b-4 border-white">
           04
         </p>
       </div>

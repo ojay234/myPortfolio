@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <section
       id="home"
-      className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] min-h-[90vh] h-fit"
+      className="max-w-[1560px] mx-auto w-[90%] md:min-h-[100vh] min-h-[90vh] h-fit my-auto"
     >
       {/* main section */}
       <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-end gap-0 pt-24 ">
