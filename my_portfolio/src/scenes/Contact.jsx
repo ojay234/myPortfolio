@@ -43,7 +43,7 @@ const Contact = () => {
             <div className="flex flex-col gap-8">
               <div className="flex items-center gap-7 text-gray_bg">
                 <HiOutlineMail size="2rem" />
-                <p className="text-white text-lg">davidojima007@gmail.com</p>
+                <p className="text-white text-lg">davidace998@gmail.com</p>
               </div>
               <div className="flex items-center gap-7 text-gray_bg">
                 <FiPhone size="2rem" />
