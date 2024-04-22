@@ -102,14 +102,22 @@ const Projects = () => {
           <div className="md:w-[30%] w-[90%]">
             <Project
               title="Project 3.png"
-              link={"https://www.fleekspace.com/"}
-              name="fleekspace"
-              text="Book spaces online"
+              link={"https://brifia.vercel.app/"}
+              name="Brifia"
+              text="Financial Forecasting System"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 5.jpg"
+              title="Project 5.png"
+              link={"https://helping-hands-six.vercel.app/admin/dashboard"}
+              name="hellping hands"
+              text="A logistic company dashboard"
+            />
+          </div>
+          <div className="md:w-[30%] w-[90%]">
+            <Project
+              title="Project 6.jpg"
               link={"https://eshop-fe74d.web.app/"}
               name="Eshop"
               text="E-commerce Organic shop"
@@ -117,20 +125,10 @@ const Projects = () => {
           </div>
           <div className="md:w-[30%] w-[90%]">
             <Project
-              title="Project 6.jpg"
-              link={
-                "https://github.com/ojay234/weather-app/tree/main/web-server"
-              }
-              name="sneakers store"
-              text="frontend mentor sneaker store"
-            />
-          </div>
-          <div className="md:w-[30%] w-[90%]">
-            <Project
-              title="Project 4.jpg"
-              link={"https://jade-marketing.vercel.app/"}
-              name="Jaydemarketing"
-              text="A digital marketing and software development agency website"
+              title="Project 4.png"
+              link={"https://www.fleekspace.com/"}
+              name="fleekspace"
+              text="Book spaces online"
             />
           </div>
         </motion.div>

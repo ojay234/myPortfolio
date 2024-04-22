@@ -47,7 +47,7 @@ const About = ({ selectedPage, setSelectedPage }) => {
             <span className="font-bold text-[18px]  lg:text-[22px] text-green">
               Front-end developer {""}
             </span>
-            with 2 years of experience in the industry. I specialize in building
+            with 3 years of experience in the industry. I specialize in building
             high-quality web applications and user interfaces that are both
             functional and visually appealing. I am skilled in a variety of
             programming languages, including HTML, CSS, JavaScript, and jQuery.
