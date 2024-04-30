@@ -102,9 +102,9 @@ const Projects = () => {
           <div className="md:w-[30%] w-[90%]">
             <Project
               title="Project 3.png"
-              link={"https://brifia.vercel.app/"}
-              name="Brifia"
-              text="Financial Forecasting System"
+              link={"https://aot-lyart.vercel.app/"}
+              name="AOT"
+              text="Real time delivery service"
             />
           </div>
           <div className="md:w-[30%] w-[90%]">
