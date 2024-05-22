@@ -111,7 +111,7 @@ const Projects = () => {
             <Project
               title="Project 5.png"
               link={"https://helping-hands-six.vercel.app/admin/dashboard"}
-              name="hellping hands"
+              name="helping hands"
               text="A logistic company dashboard"
             />
           </div>
