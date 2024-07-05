@@ -110,7 +110,7 @@ const Projects = () => {
           <div className="md:w-[30%] w-[90%]">
             <Project
               title="Project 5.png"
-              link={"https://helping-hands-six.vercel.app/admin/dashboard"}
+              link={"https://helping-hands-six.vercel.app"}
               name="helping hands"
               text="A logistic company dashboard"
             />
