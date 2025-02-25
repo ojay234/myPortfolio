@@ -85,6 +85,14 @@ const Projects = () => {
           {/* Row 1*/}
           <div className="md:w-[30%] w-[90%]">
             <Project
+              title="Project 4.png"
+              link={"https://easyspend.cc"}
+              name="Easy Spend"
+              text="Fintech Company"
+            />
+          </div>
+          <div className="md:w-[30%] w-[90%]">
+            <Project
               title="Project 1.jpg"
               link="https://d-stage.vercel.app"
               name="D-stage"
@@ -123,14 +131,7 @@ const Projects = () => {
               text="E-commerce Organic shop"
             />
           </div>
-          <div className="md:w-[30%] w-[90%]">
-            <Project
-              title="Project 4.png"
-              link={"https://www.fleekspace.com/"}
-              name="fleekspace"
-              text="Book spaces online"
-            />
-          </div>
+        
         </motion.div>
         <div className="relative w-fit">
           <p className="absolute lg:bottom-[-120px]  bottom-[-80px]   md:bottom-[-120px]  font-bold text-[40px] md:text-[60px] lg:text-[80px] border-b-4 border-white">
